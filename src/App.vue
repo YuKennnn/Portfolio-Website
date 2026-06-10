@@ -26,7 +26,7 @@ const projects = ref([
     year: '1st Year',
     title: 'Into the Woods',
     description: 'Short Film',
-    image: 'https://placehold.co/600x400/fff0f4/ff2a6d?text=Short+Film',
+    image: new URL('../public/images/first-year/into-the-woods.jfif', import.meta.url).href,
     link: '#'
   },
   {
@@ -34,7 +34,7 @@ const projects = ref([
     year: '1st Year',
     title: 'Hatid Sundo by Gimme 5',
     description: 'MTV Spoof',
-    image: 'https://placehold.co/600x400/fff0f4/ff2a6d?text=MTV+Spoof',
+    image: new URL('../public/images/first-year/hatid-sundo.jfif', import.meta.url).href,
     link: '#'
   },
   {
