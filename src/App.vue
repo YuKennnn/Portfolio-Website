@@ -51,7 +51,7 @@ const projects = ref([
     title: 'CRUD Presentation',
     description: 'Operations for Money Laundering Tracker System',
     tech: ['Java'],
-    image: '/src/assets/images/first-year/crud-gui.png',
+    image: new URL('../public/images/first-year/crud-gui.png', import.meta.url).href,
     link: '#'
   },
   {
@@ -60,7 +60,7 @@ const projects = ref([
     title: 'Lifting GUI | CRUD Presentation',
     description: 'A Java Swing application with a clean interface to manage gym workout routines, demonstrating Create, Read, Update, Delete operations for exercise tracking.',
     tech: ['Java', 'Swing'],
-    image: '/src/assets/images/first-year/lifting-gui.png',
+    image: new URL('../public/images/first-year/lifting-gui.png', import.meta.url).href,
     link: '#'
   },
   {
@@ -69,7 +69,7 @@ const projects = ref([
     title: 'Hotel-Motel GUI | CRUD Presentation',
     description: 'A Java Swing application designed to manage hotel reservations, featuring a user-friendly interface for creating, reading, updating, and deleting booking records.',
     tech: ['Java', 'Swing'],
-    image: '/src/assets/images/first-year/hotel-motel-gui.png',
+    image: new URL('../public/images/first-year/hotel-motel-gui.png', import.meta.url).href,
     link: '#'
   },
   {
@@ -78,7 +78,7 @@ const projects = ref([
     title: 'DNSC Shop Management System | CRUD Presentation',
     description: 'A Java Swing Final Project application that showcases a simple shop management system for Davao del Norte State College, allowing users to perform CRUD operations on products, customers, and orders through an intuitive graphical interface.',
     tech: ['Java', 'Swing'],
-    image: '/src/assets/images/first-year/dsms-gui.png',
+    image: new URL('../public/images/first-year/dsms-gui.png', import.meta.url).href,
     link: '#'
   },
 
@@ -89,7 +89,7 @@ const projects = ref([
     title: 'Honey Dias Website',
     description: 'A responsive e-commerce website built for a local honey business, featuring product listings, shopping cart functionality, and a clean user interface.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    image: '/src/assets/images/second-year/honey-dias-group.jpg',
+    image: new URL('../public/images/second-year/honey-dias-group.jpg', import.meta.url).href,
     link: '#'
   },
   {
@@ -98,7 +98,7 @@ const projects = ref([
     title: 'Locker Management System | ZakkSpace Team',
     description: 'A Laravel-based web application designed to manage locker rentals for Davao del Norte State College, featuring user authentication, locker availability tracking, and an admin dashboard for managing reservations.',
     tech: ['PHP', 'MySQL', 'Laravel', 'Bootstrap', 'JavaScript'],
-    image: '/src/assets/images/second-year/zakkspace-locker.jpg',
+    image: new URL('../public/images/second-year/zakkspace-locker.jpg', import.meta.url).href,
     link: '#'
   },
   {
@@ -107,7 +107,7 @@ const projects = ref([
     title: 'Peasy Builder Website',
     description: 'A website for computer hardware assembly services, showcasing a catalog of components, a custom PC builder tool, and an order form for customers to request builds based on their preferences.',
     tech: ['JavaScript', 'CSS', 'HTML', 'PHP', 'MySQL'],
-    image: '/src/assets/images/second-year/peasy-system.jfif',
+    image: new URL('../public/images/second-year/peasy-system.jfif', import.meta.url).href,
     link: '#'
   },
 
@@ -118,7 +118,7 @@ const projects = ref([
     title: 'Attendance Tracker Application',
     description: 'A flutter-based mobile application designed to streamline attendance management for educational institutions, featuring QR code scanning, real-time attendance updates, and a user-friendly interface for both students and teachers.',
     tech: ['Flutter', 'Dart', 'Firebase'],
-    image: '/src/assets/images/third-year/atansdance-app.jfif',
+    image: new URL('../public/images/third-year/atansdance-app.jfif', import.meta.url).href,
     link: '#'
   },
   {
@@ -127,7 +127,7 @@ const projects = ref([
     title: 'Intrusion Detection IoT-Based System',
     description: 'A real-time monitoring system utilizing IoT sensors to detect intrusions for farmers, sending alerts through sms notifications with a secure hardware-software integrated approach.',
     tech: ['IoT', 'Arduino', 'Arduino IDE'],
-    image: '/src/assets/images/third-year/IoT-intruder-detection-system.jpg',
+    image: new URL('../public/images/third-year/IoT-intruder-detection-system.jpg', import.meta.url).href,
     link: '#'
   },
   {
@@ -136,7 +136,7 @@ const projects = ref([
     title: 'Lakbay+',
     description: 'Lakbay+ is your interactive travel canvas. We analyze commute costs, split expenses among friends, and calculate your daily savings target automatically.',
     tech: ['Vue Native', 'Tailwind', 'Capacitor'],
-    image: '/src/assets/images/third-year/lakbay-plus.jfif',
+    image: new URL('../public/images/third-year/lakbay-plus.jfif', import.meta.url).href,
     link: '#'
   },
   {
@@ -145,7 +145,7 @@ const projects = ref([
     title: 'Secure System|Cyber Security Final Project',
     description: 'A Hosted Cyber Security project focused on building a secure API Gateway and login system implementing Hash, Salt and Pepper techniques for password security, along with JSON Web Tokens for session management and authentication.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel'],
-    image: '/src/assets/images/third-year/cyber-final-project.jfif',
+    image: new URL('../public/images/third-year/cyber-final-project.jfif', import.meta.url).href,
     link: '#'
   },
   {
@@ -154,7 +154,7 @@ const projects = ref([
     title: 'CyberMorph | Capstone Project',
     description: 'A Cyber Security Game designed to teach users about common vulnerabilities and attack vectors through interactive challenges, utilizing a secure API Gateway and login system with Dashboard analytics to track user progress and performance.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel', 'Godot Engine', 'Aseprite', 'Figma', 'Canva'],
-    image: '/src/assets/images/third-year/capstone-project.jfif',
+    image: new URL('../public/images/third-year/capstone-project.jfif', import.meta.url).href,
     link: '#'
   },
 ])
