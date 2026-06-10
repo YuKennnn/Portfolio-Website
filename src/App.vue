@@ -11,7 +11,8 @@ const profile = ref({
   pictureUrl: new URL('/public/images/me.jpg', import.meta.url).href,  
   email: "licokenneth11@gmail.com",
   github: "https://github.com/YuKennnn",
-  linkedin: "https://www.linkedin.com/in/kenneth-lico-696165369/"
+  linkedin: "https://www.linkedin.com/in/kenneth-lico-696165369/",
+  facebook: "https://www.facebook.com/kenneth.lico.92/"
 })
 
 const skills = ref([
@@ -79,7 +80,7 @@ const projects = ref([
     description: 'A Java Swing Final Project application that showcases a simple shop management system for Davao del Norte State College, allowing users to perform CRUD operations on products, customers, and orders through an intuitive graphical interface.',
     tech: ['Java', 'Swing'],
     image: new URL('../public/images/first-year/dsms-gui.png', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/DNSC_SMS'
   },
 
   // --- 2ND YEAR PROJECTS (3 items) ---
@@ -90,7 +91,7 @@ const projects = ref([
     description: 'A responsive e-commerce website built for a local honey business, featuring product listings, shopping cart functionality, and a clean user interface.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     image: new URL('../public/images/second-year/honey-dias-group.jpg', import.meta.url).href,
-    link: '#'
+    link: 'https://panzerweb.github.io/HoneyDias/'
   },
   {
     id: 9,
@@ -99,7 +100,7 @@ const projects = ref([
     description: 'A Laravel-based web application designed to manage locker rentals for Davao del Norte State College, featuring user authentication, locker availability tracking, and an admin dashboard for managing reservations.',
     tech: ['PHP', 'MySQL', 'Laravel', 'Bootstrap', 'JavaScript'],
     image: new URL('../public/images/second-year/zakkspace-locker.jpg', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/ZakkSpace-LMS-Updated'
   },
   {
     id: 10,
@@ -108,7 +109,7 @@ const projects = ref([
     description: 'A website for computer hardware assembly services, showcasing a catalog of components, a custom PC builder tool, and an order form for customers to request builds based on their preferences.',
     tech: ['JavaScript', 'CSS', 'HTML', 'PHP', 'MySQL'],
     image: new URL('../public/images/second-year/peasy-system.jfif', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/PeasyShopBuilder'
   },
 
   // --- 3RD YEAR PROJECTS (5 items) ---
@@ -119,7 +120,7 @@ const projects = ref([
     description: 'A flutter-based mobile application designed to streamline attendance management for educational institutions, featuring QR code scanning, real-time attendance updates, and a user-friendly interface for both students and teachers.',
     tech: ['Flutter', 'Dart', 'Firebase'],
     image: new URL('../public/images/third-year/atansdance-app.jfif', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/AtansDanceApp'
   },
   {
     id: 12,
@@ -137,7 +138,7 @@ const projects = ref([
     description: 'Lakbay+ is your interactive travel canvas. We analyze commute costs, split expenses among friends, and calculate your daily savings target automatically.',
     tech: ['Vue Native', 'Tailwind', 'Capacitor'],
     image: new URL('../public/images/third-year/lakbay-plus.jfif', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/lakbay-web'
   },
   {
     id: 14,
@@ -146,7 +147,7 @@ const projects = ref([
     description: 'A Hosted Cyber Security project focused on building a secure API Gateway and login system implementing Hash, Salt and Pepper techniques for password security, along with JSON Web Tokens for session management and authentication.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel'],
     image: new URL('../public/images/third-year/cyber-final-project.jfif', import.meta.url).href,
-    link: '#'
+    link: 'https://cyber-security-final-project-fronte.vercel.app/'
   },
   {
     id: 15,
@@ -155,7 +156,7 @@ const projects = ref([
     description: 'A Cyber Security Game designed to teach users about common vulnerabilities and attack vectors through interactive challenges, utilizing a secure API Gateway and login system with Dashboard analytics to track user progress and performance.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel', 'Godot Engine', 'Aseprite', 'Figma', 'Canva'],
     image: new URL('../public/images/third-year/capstone-project.jfif', import.meta.url).href,
-    link: '#'
+    link: 'https://github.com/YuKennnn/cyber-morph-frontend-v1'
   },
 ])
 
