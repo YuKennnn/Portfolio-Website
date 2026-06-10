@@ -8,7 +8,7 @@ const profile = ref({
   name: "Kenneth Lico",
   role: "BSIT Student | Frontend Dev",
   description: "Documenting my Bachelor of Science in Information Technology journey through clean code, minimalist design, and continuous learning.",
-  pictureUrl: "/public/images/me.jpg",
+  pictureUrl: new URL('/public/images/me.jpg', import.meta.url).href,  
   email: "licokenneth11@gmail.com",
   github: "https://github.com/YuKennnn",
   linkedin: "https://www.linkedin.com/in/kenneth-lico-696165369/"
