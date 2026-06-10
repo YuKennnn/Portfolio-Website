@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 // ==========================================
 // EDITABLE CONTENT
@@ -8,15 +8,14 @@ const profile = ref({
   name: "Kenneth Lico",
   role: "BSIT Student | Frontend Dev",
   description: "Documenting my Bachelor of Science in Information Technology journey through clean code, minimalist design, and continuous learning.",
-  pictureUrl: "../../src/assets/images/me.jpg",
+  pictureUrl: "/src/assets/images/me.jpg",
   email: "licokenneth11@gmail.com",
   github: "https://github.com/YuKennnn",
-  linkedin: "https://www.linkedin.com/in/kenneth-lico-696165369/",
-  facebook: "https://www.facebook.com/kenneth.lico.92/"
+  linkedin: "https://www.linkedin.com/in/kenneth-lico-696165369/"
 })
 
 const skills = ref([
-  'HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'FastAPI', 'PHP', 'MySQL', 'Laravel', 'PostGreSQL', 'Firebase',
+  'HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'FastAPI', 'PHP', 'MySQL', 'Laravel', 'Dart', 'Firebase',
   'Node.js', 'Python', 'Git', 'Figma', 'UI/UX Design'
 ])
 
@@ -43,7 +42,7 @@ const projects = ref([
     year: '1st Year',
     title: 'Photo Collage',
     description: 'Series Photography',
-    image: '../../src/assets/images/first-year/series-photography.png',
+    image: '/src/assets/images/first-year/series-photography.png',
     link: '#'
   },
   {
@@ -52,7 +51,7 @@ const projects = ref([
     title: 'CRUD Presentation',
     description: 'Operations for Money Laundering Tracker System',
     tech: ['Java'],
-    image: '../../src/assets/images/first-year/crud-gui.png',
+    image: '/src/assets/images/first-year/crud-gui.png',
     link: '#'
   },
   {
@@ -61,7 +60,7 @@ const projects = ref([
     title: 'Lifting GUI | CRUD Presentation',
     description: 'A Java Swing application with a clean interface to manage gym workout routines, demonstrating Create, Read, Update, Delete operations for exercise tracking.',
     tech: ['Java', 'Swing'],
-    image: '../../src/assets/images/first-year/lifting-gui.png',
+    image: '/src/assets/images/first-year/lifting-gui.png',
     link: '#'
   },
   {
@@ -70,7 +69,7 @@ const projects = ref([
     title: 'Hotel-Motel GUI | CRUD Presentation',
     description: 'A Java Swing application designed to manage hotel reservations, featuring a user-friendly interface for creating, reading, updating, and deleting booking records.',
     tech: ['Java', 'Swing'],
-    image: '../../src/assets/images/first-year/hotel-motel-gui.png',
+    image: '/src/assets/images/first-year/hotel-motel-gui.png',
     link: '#'
   },
   {
@@ -79,7 +78,7 @@ const projects = ref([
     title: 'DNSC Shop Management System | CRUD Presentation',
     description: 'A Java Swing Final Project application that showcases a simple shop management system for Davao del Norte State College, allowing users to perform CRUD operations on products, customers, and orders through an intuitive graphical interface.',
     tech: ['Java', 'Swing'],
-    image: '../../src/assets/images/first-year/dsms-gui.png',
+    image: '/src/assets/images/first-year/dsms-gui.png',
     link: '#'
   },
 
@@ -90,7 +89,7 @@ const projects = ref([
     title: 'Honey Dias Website',
     description: 'A responsive e-commerce website built for a local honey business, featuring product listings, shopping cart functionality, and a clean user interface.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    image: '../../src/assets/images/second-year/honey-dias-group.jpg',
+    image: '/src/assets/images/second-year/honey-dias-group.jpg',
     link: '#'
   },
   {
@@ -99,7 +98,7 @@ const projects = ref([
     title: 'Locker Management System | ZakkSpace Team',
     description: 'A Laravel-based web application designed to manage locker rentals for Davao del Norte State College, featuring user authentication, locker availability tracking, and an admin dashboard for managing reservations.',
     tech: ['PHP', 'MySQL', 'Laravel', 'Bootstrap', 'JavaScript'],
-    image: '../../src/assets/images/second-year/zakkspace-locker.jpg',
+    image: '/src/assets/images/second-year/zakkspace-locker.jpg',
     link: '#'
   },
   {
@@ -108,7 +107,7 @@ const projects = ref([
     title: 'Peasy Builder Website',
     description: 'A website for computer hardware assembly services, showcasing a catalog of components, a custom PC builder tool, and an order form for customers to request builds based on their preferences.',
     tech: ['JavaScript', 'CSS', 'HTML', 'PHP', 'MySQL'],
-    image: '../../src/assets/images/second-year/peasy-system.jfif',
+    image: '/src/assets/images/second-year/peasy-system.jfif',
     link: '#'
   },
 
@@ -119,7 +118,7 @@ const projects = ref([
     title: 'Attendance Tracker Application',
     description: 'A flutter-based mobile application designed to streamline attendance management for educational institutions, featuring QR code scanning, real-time attendance updates, and a user-friendly interface for both students and teachers.',
     tech: ['Flutter', 'Dart', 'Firebase'],
-    image: '../../src/assets/images/third-year/atansdance-app.jfif',
+    image: '/src/assets/images/third-year/atansdance-app.jfif',
     link: '#'
   },
   {
@@ -128,7 +127,7 @@ const projects = ref([
     title: 'Intrusion Detection IoT-Based System',
     description: 'A real-time monitoring system utilizing IoT sensors to detect intrusions for farmers, sending alerts through sms notifications with a secure hardware-software integrated approach.',
     tech: ['IoT', 'Arduino', 'Arduino IDE'],
-    image: '../../src/assets/images/third-year/IoT-intruder-detection-system.jpg',
+    image: '/src/assets/images/third-year/IoT-intruder-detection-system.jpg',
     link: '#'
   },
   {
@@ -137,7 +136,7 @@ const projects = ref([
     title: 'Lakbay+',
     description: 'Lakbay+ is your interactive travel canvas. We analyze commute costs, split expenses among friends, and calculate your daily savings target automatically.',
     tech: ['Vue Native', 'Tailwind', 'Capacitor'],
-    image: '../../src/assets/images/third-year/lakbay-plus.jfif',
+    image: '/src/assets/images/third-year/lakbay-plus.jfif',
     link: '#'
   },
   {
@@ -146,7 +145,7 @@ const projects = ref([
     title: 'Secure System|Cyber Security Final Project',
     description: 'A Hosted Cyber Security project focused on building a secure API Gateway and login system implementing Hash, Salt and Pepper techniques for password security, along with JSON Web Tokens for session management and authentication.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel'],
-    image: '../../src/assets/images/third-year/cyber-final-project.jfif',
+    image: '/src/assets/images/third-year/cyber-final-project.jfif',
     link: '#'
   },
   {
@@ -155,7 +154,7 @@ const projects = ref([
     title: 'CyberMorph | Capstone Project',
     description: 'A Cyber Security Game designed to teach users about common vulnerabilities and attack vectors through interactive challenges, utilizing a secure API Gateway and login system with Dashboard analytics to track user progress and performance.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel', 'Godot Engine', 'Aseprite', 'Figma', 'Canva'],
-    image: '../../src/assets/images/third-year/capstone-project.jfif',
+    image: '/src/assets/images/third-year/capstone-project.jfif',
     link: '#'
   },
 ])
@@ -171,7 +170,6 @@ const formState = ref({
 
 const handleFormSubmit = (e) => {
   e.preventDefault();
-  // Here you would typically connect to an API route, EmailJS, or Formspree
   alert(`Thanks for reaching out, ${formState.value.name}! I will get back to you soon.`);
   formState.value = { name: '', email: '', message: '' };
 }
@@ -182,7 +180,6 @@ const handleFormSubmit = (e) => {
 const tabs = ['All', '1st Year', '2nd Year', '3rd Year', '4th Year']
 const activeTab = ref('All')
 
-// Automatically updates the displayed projects based on the active tab
 const filteredProjects = computed(() => {
   if (activeTab.value === 'All') {
     return projects.value
@@ -191,8 +188,52 @@ const filteredProjects = computed(() => {
 })
 
 // ==========================================
-// LOGIC & ANIMATIONS
+// JS ANIMATIONS & LOGIC
 // ==========================================
+
+// 1. Dynamic Scroll Progress & Nav Behavior
+const scrollProgress = ref(0)
+const isNavScrolled = ref(false)
+
+const handleScroll = () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  
+  // Calculate Window Progress Line Width
+  scrollProgress.value = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  
+  // Shrink/Blur Nav state
+  isNavScrolled.value = scrollTop > 60;
+}
+
+// 2. Interactive 3D Card Perspective Tilt Effect
+const handleTilt = (e) => {
+  const el = e.currentTarget;
+  const rect = el.getBoundingClientRect();
+  const x = e.clientX - rect.left; 
+  const y = e.clientY - rect.top;  
+  
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+  
+  // Maximum rotation parameters
+  const rotateX = ((y - centerY) / centerY) * -8;
+  const rotateY = ((x - centerX) / centerX) * 8;
+  
+  el.style.setProperty('--rotate-x', `${rotateX}deg`);
+  el.style.setProperty('--rotate-y', `${rotateY}deg`);
+}
+
+const resetTilt = (e) => {
+  const el = e.currentTarget;
+  el.style.setProperty('--rotate-x', `0deg`);
+  el.style.setProperty('--rotate-y', `0deg`);
+}
+
+// 3. Automated JS Typewriter Array Logic
+const displayedRole = ref('');
+const fullRole = profile.value.role;
+
 const scrollTo = (id) => {
   const element = document.getElementById(id)
   if (element) {
@@ -200,9 +241,23 @@ const scrollTo = (id) => {
   }
 }
 
-// Set up scroll animations when component mounts
 onMounted(() => {
-  // Intersection Observer for scroll reveal animations
+  window.addEventListener('scroll', handleScroll);
+
+  // Trigger Typewriter execution logic after 800ms
+  setTimeout(() => {
+    let i = 0;
+    const typeWriter = () => {
+      if (i < fullRole.length) {
+        displayedRole.value += fullRole.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50); 
+      }
+    };
+    typeWriter();
+  }, 800);
+
+  // Intersection Observer for slide reveal components
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -211,21 +266,27 @@ onMounted(() => {
     })
   }, { 
     threshold: 0.1, 
-    rootMargin: "0px 0px -50px 0px" // Triggers slightly before it enters the viewport
+    rootMargin: "0px 0px -50px 0px" 
   })
 
-  // Target all elements with the 'animate-on-scroll' class
   document.querySelectorAll('.animate-on-scroll').forEach((el) => {
     observer.observe(el)
   })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 })
 </script>
 
 <template>
   <div class="portfolio-container fade-in-load">
-    <nav class="navbar slide-down">
+    
+    <div class="scroll-progress-bar" :style="{ width: scrollProgress + '%' }"></div>
+
+    <nav class="navbar slide-down" :class="{ 'navbar-scrolled': isNavScrolled }">
       <div class="nav-content">
-        <div class="logo">YuKen</div>
+        <div class="logo">BSIT.</div>
         <div class="nav-links">
           <button @click="scrollTo('home')">Home</button>
           <button @click="scrollTo('about')">About</button>
@@ -240,14 +301,24 @@ onMounted(() => {
         <div class="hero-text-content">
           <p class="greeting animate-on-scroll reveal-up" style="transition-delay: 0.1s">Hello, I'm</p>
           <h1 class="hero-name animate-on-scroll reveal-up" style="transition-delay: 0.2s">{{ profile.name }}</h1>
-          <h2 class="hero-role animate-on-scroll reveal-up" style="transition-delay: 0.3s">{{ profile.role }}</h2>
+          
+          <h2 class="hero-role animate-on-scroll reveal-up" style="transition-delay: 0.3s">
+            {{ displayedRole }}<span class="blinking-cursor">|</span>
+          </h2>
+          
           <p class="hero-desc animate-on-scroll reveal-up" style="transition-delay: 0.4s">{{ profile.description }}</p>
           <div class="hero-actions animate-on-scroll reveal-up" style="transition-delay: 0.5s">
             <button class="btn-primary" @click="scrollTo('projects')">Explore Work</button>
             <button class="btn-secondary" @click="scrollTo('about')">About Me</button>
           </div>
         </div>
-        <div class="hero-image-container animate-on-scroll reveal-scale" style="transition-delay: 0.4s">
+        
+        <div 
+          class="hero-image-container animate-on-scroll reveal-scale tilt-element" 
+          style="transition-delay: 0.4s"
+          @mousemove="handleTilt"
+          @mouseleave="resetTilt"
+        >
           <img :src="profile.pictureUrl" alt="Profile Picture" class="profile-pic" />
           <div class="hero-image-backdrop"></div>
         </div>
@@ -294,7 +365,9 @@ onMounted(() => {
           <div 
             v-for="project in filteredProjects" 
             :key="project.id" 
-            class="project-card"
+            class="project-card tilt-element"
+            @mousemove="handleTilt"
+            @mouseleave="resetTilt"
           >
             <div class="project-image">
               <img :src="project.image" :alt="project.title" />
@@ -303,7 +376,7 @@ onMounted(() => {
             <div class="project-content">
               <h4>{{ project.title }}</h4>
               <p>{{ project.description }}</p>
-              <div class="tech-stack">
+              <div class="tech-stack" v-if="project.tech">
                 <span v-for="tech in project.tech" :key="tech" class="tech-tag">{{ tech }}</span>
               </div>
               <a :href="project.link" class="project-link">View Project &rarr;</a>
@@ -320,7 +393,7 @@ onMounted(() => {
     <section id="contact" class="contact-section">
       <div class="section-container">
         <h3 class="section-title animate-on-scroll reveal-up">Let's Connect.</h3>
-        <p class="contact-subtitle animate-on-scroll reveal-up">Currently open to internships, opportunities, and collaborative projects. Reach out and let's talk code.</p>
+        <p class="contact-subtitle animate-on-scroll reveal-up">Currently open to internships, freelance opportunities, and collaborative projects. Reach out and let's talk code.</p>
         
         <div class="contact-grid">
           
@@ -328,12 +401,12 @@ onMounted(() => {
             <form @submit="handleFormSubmit" class="contact-form">
               <div class="form-group">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" v-model="formState.name" required placeholder="Bronny James">
+                <input type="text" id="name" v-model="formState.name" required placeholder="John Doe">
               </div>
               
               <div class="form-group">
                 <label for="email">Your Email</label>
-                <input type="email" id="email" v-model="formState.email" required placeholder="bronny.james@gmail.com">
+                <input type="email" id="email" v-model="formState.email" required placeholder="john@example.com">
               </div>
               
               <div class="form-group">
@@ -361,7 +434,6 @@ onMounted(() => {
               <div class="social-links-modern">
                 <a :href="profile.github" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a :href="profile.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a :href="profile.facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
               </div>
             </div>
           </div>
@@ -374,7 +446,7 @@ onMounted(() => {
       <div class="footer-content">
         <div class="footer-bottom">
           <p class="copyright">© 2026 {{ profile.name }}. All Rights Reserved.</p>
-          <p class="craft-note">Crafted with Vue.js & Minimalist Design.</p>
+          <p class="craft-note">Crafted with Vue.js & Modern JS Modules.</p>
         </div>
       </div>
     </footer>
@@ -382,26 +454,27 @@ onMounted(() => {
 </template>
 
 <style>
-/* Primary: Pink (#ff2a6d)
-  Secondary: White (#ffffff / #f5f5f7)
-  Tertiary/Optional: Black (#1d1d1f for high contrast text)
+/* Minimalist Theme Framework: Pink (Primary) & White (Secondary)
 */
 :root {
+  /* Core Pink Palettes */
   --primary-pink: #ff2a6d;
   --primary-pink-hover: #e0225e;
   --primary-pink-light: #fff0f4;
   
-  --bg-color: #ffffff; /* Primary Background */
+  /* White Architectural Ecosystem */
+  --bg-color: #ffffff; 
   --bg-card: #fdfdfd;
   --bg-alt: #fcfcfc;
   
-  --text-main: #1d1d1f; /* High contrast reading text */
+  /* Black Typographical Accents */
+  --text-main: #1d1d1f; 
   --text-muted: #6e6e73;
   
   --border-light: #f2f2f7;
   --nav-bg: rgba(255, 255, 255, 0.85);
   
-  /* Apple's butter-smooth easing */
+  /* Apple Easing Rules */
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1); 
   --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -422,8 +495,33 @@ body {
 }
 
 /* ==========================================
-   ANIMATION UTILITY CLASSES
+   ANIMATION INTERACTION LAYER
    ========================================== */
+
+/* JS Scroll Progress Tracking Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background-color: var(--primary-pink);
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(255, 42, 109, 0.5);
+}
+
+/* JS Automated Typewriter blinking cursor module */
+.blinking-cursor {
+  font-weight: 300;
+  color: var(--primary-pink);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .fade-in-load {
   animation: fadeIn 1s var(--ease-out) forwards;
 }
@@ -432,7 +530,6 @@ body {
   animation: slideDown 0.8s var(--ease-spring) forwards;
 }
 
-/* Scroll reveal initial states */
 .reveal-up {
   opacity: 0;
   transform: translateY(40px);
@@ -445,7 +542,6 @@ body {
   transition: opacity 0.8s var(--ease-spring), transform 1s var(--ease-spring);
 }
 
-/* Scroll reveal active state */
 .is-visible.reveal-up {
   opacity: 1;
   transform: translateY(0);
@@ -466,7 +562,6 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Project Vue Transition Styles */
 .project-fade-move,
 .project-fade-enter-active,
 .project-fade-leave-active {
@@ -481,8 +576,16 @@ body {
   position: absolute;
 }
 
+/* JS Vector Matrix Tilt Element Rules */
+.tilt-element {
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+  transform: perspective(1000px) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
 /* ==========================================
-   LAYOUT & COMPONENTS
+   LAYOUT DESIGN CORE
    ========================================== */
 .portfolio-container {
   display: flex;
@@ -499,17 +602,23 @@ body {
   color: var(--primary-pink); 
 }
 
-/* Navigation */
+/* Navigation Framework */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  padding: 1.5rem 0;
+  transition: padding 0.4s var(--ease-spring), background-color 0.4s var(--ease-out), border-bottom 0.4s ease;
+}
+
+.navbar-scrolled {
   background-color: var(--nav-bg);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border-light);
-  z-index: 100;
-  padding: 1rem 0;
+  padding: 1rem 0; 
 }
 
 .nav-content {
@@ -554,7 +663,7 @@ section {
   width: 100%;
 }
 
-/* Hero Section */
+/* Hero Elements */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -596,6 +705,7 @@ section {
   font-weight: 500;
   letter-spacing: -0.5px;
   margin-bottom: 1.5rem;
+  min-height: 2.5rem;
 }
 
 .hero-desc {
@@ -607,7 +717,6 @@ section {
   line-height: 1.6;
 }
 
-/* Interactive Buttons */
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -633,9 +742,7 @@ section {
   box-shadow: 0 10px 20px rgba(255, 42, 109, 0.2);
 }
 
-.btn-primary:active {
-  transform: scale(0.98); 
-}
+.btn-primary:active { transform: scale(0.98); }
 
 .btn-secondary {
   background-color: transparent;
@@ -648,11 +755,8 @@ section {
   transform: translateY(-2px);
 }
 
-.btn-secondary:active {
-  transform: scale(0.98);
-}
+.btn-secondary:active { transform: scale(0.98); }
 
-/* Hero Image */
 .hero-image-container {
   flex: 1;
   display: flex;
@@ -668,11 +772,6 @@ section {
   z-index: 2;
   box-shadow: 0 20px 40px rgba(255, 42, 109, 0.1);
   border: 4px solid white;
-  transition: transform 0.6s var(--ease-spring);
-}
-
-.hero-image-container:hover .profile-pic {
-  transform: scale(1.03) rotate(2deg); 
 }
 
 .hero-image-backdrop {
@@ -686,14 +785,9 @@ section {
   transform: translateX(-45%);
   z-index: 1;
   opacity: 0.6;
-  transition: transform 0.8s var(--ease-spring);
 }
 
-.hero-image-container:hover .hero-image-backdrop {
-  transform: translateX(-40%) scale(1.05);
-}
-
-/* About Section */
+/* About Layout Modules */
 .about-section {
   background-color: var(--bg-card);
 }
@@ -742,7 +836,7 @@ section {
   box-shadow: 0 5px 15px rgba(255, 42, 109, 0.15);
 }
 
-/* Projects Section & Tabs */
+/* Project Module Matrix */
 .projects-section {
   background-color: var(--bg-alt);
 }
@@ -787,22 +881,19 @@ section {
   min-height: 350px;
 }
 
-/* Enhanced Pink Interactive Project Cards */
 .project-card {
-  background: linear-gradient(to bottom, var(--bg-card), #fffafc); /* Faint pink gradient */
+  background: linear-gradient(to bottom, var(--bg-card), #fffafc);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 42, 109, 0.15); /* Soft pink default border */
+  border: 1px solid rgba(255, 42, 109, 0.15);
   display: flex;
   flex-direction: column;
-  transition: transform 0.5s var(--ease-spring), box-shadow 0.5s var(--ease-spring), border-color 0.3s ease;
-  will-change: transform;
 }
 
 .project-card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(255, 42, 109, 0.15); /* Pink shadow on hover */
-  border-color: var(--primary-pink); /* Strong pink border on hover */
+  box-shadow: 0 30px 60px rgba(255, 42, 109, 0.1);
+  border-color: var(--primary-pink);
+  z-index: 10;
 }
 
 .project-image {
@@ -814,15 +905,10 @@ section {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid rgba(255, 42, 109, 0.1);
+  border-bottom: 1px solid var(--border-light);
   transition: transform 0.8s var(--ease-spring);
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.05); 
-}
-
-/* Pink Year Badge overlaid on card image */
 .year-badge {
   position: absolute;
   top: 1rem;
