@@ -286,7 +286,7 @@ onUnmounted(() => {
 
     <nav class="navbar slide-down" :class="{ 'navbar-scrolled': isNavScrolled }">
       <div class="nav-content">
-        <div class="logo">BSIT.</div>
+        <div class="logo">YuKen</div>
         <div class="nav-links">
           <button @click="scrollTo('home')">Home</button>
           <button @click="scrollTo('about')">About</button>
