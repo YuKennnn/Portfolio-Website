@@ -42,7 +42,7 @@ const projects = ref([
     year: '1st Year',
     title: 'Photo Collage',
     description: 'Series Photography',
-    image: '/src/assets/images/first-year/series-photography.png',
+    image: new URL('../public/images/first-year/series-photography.png', import.meta.url).href,  
     link: '#'
   },
   {
