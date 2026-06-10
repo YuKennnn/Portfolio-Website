@@ -401,12 +401,12 @@ onUnmounted(() => {
             <form @submit="handleFormSubmit" class="contact-form">
               <div class="form-group">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" v-model="formState.name" required placeholder="John Doe">
+                <input type="text" id="name" v-model="formState.name" required placeholder="Bronny James">
               </div>
               
               <div class="form-group">
                 <label for="email">Your Email</label>
-                <input type="email" id="email" v-model="formState.email" required placeholder="john@example.com">
+                <input type="email" id="email" v-model="formState.email" required placeholder="bronny.james@gmail.com">
               </div>
               
               <div class="form-group">
