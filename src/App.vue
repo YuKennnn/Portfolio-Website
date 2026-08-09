@@ -156,7 +156,7 @@ const projects = ref([
     description: 'A Cyber Security Game designed to teach users about common vulnerabilities and attack vectors through interactive challenges, utilizing a secure API Gateway and login system with Dashboard analytics to track user progress and performance.',
     tech: ['Vue.js', 'FastAPI', 'bcrypt', 'Render', 'Vercel', 'Godot Engine', 'Aseprite', 'Figma', 'Canva'],
     image: new URL('../public/images/third-year/capstone-project.jfif', import.meta.url).href,
-    link: 'https://github.com/YuKennnn/cyber-morph-frontend-v1'
+    link: 'https://cyber-morph-portal.vercel.app/portal/educator'
   },
 ])
 
@@ -349,7 +349,7 @@ onUnmounted(() => {
 
     <section id="projects" class="projects-section">
       <div class="section-container">
-        <h3 class="section-title animate-on-scroll reveal-up">Selected Projects</h3>
+        <h3 class="section-title animate-on-scroll reveal-up">School Projects</h3>
         
         <div class="project-tabs animate-on-scroll reveal-up">
           <button 
@@ -447,7 +447,7 @@ onUnmounted(() => {
       <div class="footer-content">
         <div class="footer-bottom">
           <p class="copyright">© 2026 {{ profile.name }}. All Rights Reserved.</p>
-          <p class="craft-note">Crafted with Vue.js & Modern JS Modules.</p>
+          <p class="craft-note"></p>
         </div>
       </div>
     </footer>
