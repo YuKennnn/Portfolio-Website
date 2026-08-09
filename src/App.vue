@@ -138,7 +138,7 @@ const projects = ref([
     description: 'Lakbay+ is your interactive travel canvas. We analyze commute costs, split expenses among friends, and calculate your daily savings target automatically.',
     tech: ['Vue Native', 'Tailwind', 'Capacitor'],
     image: new URL('../public/images/third-year/lakbay-plus.jfif', import.meta.url).href,
-    link: 'https://github.com/YuKennnn/lakbay-web'
+    link: 'https://lakbay-web-blue.vercel.app/'
   },
   {
     id: 14,
@@ -427,7 +427,7 @@ onUnmounted(() => {
             
             <div class="info-block">
               <h4>Location</h4>
-              <p>Panabo City, Davao Region, Philippines</p>
+              <p>Philippines</p>
             </div>
 
             <div class="info-block">
