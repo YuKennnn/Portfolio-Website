@@ -111,10 +111,20 @@ const projects = ref([
     image: new URL('../public/images/second-year/peasy-system.jfif', import.meta.url).href,
     link: 'https://github.com/YuKennnn/PeasyShopBuilder'
   },
+  {
+    id: 11,
+    year: '2nd Year',
+    title: 'VerdiStep WebApplication and Mobile Application UI Design',
+    description: 'A UI/UX design project for a web and mobile application aimed at providing step-by-step guidance for users, featuring wireframes, mockups, and interactive prototypes created using Figma.',
+    tech: ['Figma', 'UI/UX Design'],
+    image: new URL('../public/images/second-year/figmaUI.jfif', import.meta.url).href,
+    link: 'https://www.figma.com/proto/EuP9vDjSpPgnYyLCdKy2E9/VERDISTEP?node-id=1257-2024&starting-point-node-id=1257%3A2024&t=V64tDajITZ4n1m5c-1'
+  },
+
 
   // --- 3RD YEAR PROJECTS (5 items) ---
   {
-    id: 11,
+    id: 12,
     year: '3rd Year',
     title: 'Attendance Tracker Application',
     description: 'A flutter-based mobile application designed to streamline attendance management for educational institutions, featuring QR code scanning, real-time attendance updates, and a user-friendly interface for both students and teachers.',
@@ -123,7 +133,7 @@ const projects = ref([
     link: 'https://github.com/YuKennnn/AtansDanceApp'
   },
   {
-    id: 12,
+    id: 13,
     year: '3rd Year',
     title: 'Intrusion Detection IoT-Based System',
     description: 'A real-time monitoring system utilizing IoT sensors to detect intrusions for farmers, sending alerts through sms notifications with a secure hardware-software integrated approach.',
@@ -132,7 +142,7 @@ const projects = ref([
     link: '#'
   },
   {
-    id: 13,
+    id: 14,
     year: '3rd Year',
     title: 'Lakbay+',
     description: 'Lakbay+ is your interactive travel canvas. We analyze commute costs, split expenses among friends, and calculate your daily savings target automatically.',
@@ -141,7 +151,7 @@ const projects = ref([
     link: 'https://lakbay-web-blue.vercel.app/'
   },
   {
-    id: 14,
+    id: 15,
     year: '3rd Year',
     title: 'Secure System|Cyber Security Final Project',
     description: 'A Hosted Cyber Security project focused on building a secure API Gateway and login system implementing Hash, Salt and Pepper techniques for password security, along with JSON Web Tokens for session management and authentication.',
@@ -150,7 +160,7 @@ const projects = ref([
     link: 'https://cyber-security-final-project-fronte.vercel.app/'
   },
   {
-    id: 15,
+    id: 16,
     year: '3rd Year',
     title: 'CyberMorph | Capstone Project',
     description: 'A Cyber Security Game designed to teach users about common vulnerabilities and attack vectors through interactive challenges, utilizing a secure API Gateway and login system with Dashboard analytics to track user progress and performance.',
